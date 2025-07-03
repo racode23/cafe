@@ -74,21 +74,27 @@ footer{
 }
 nav{
     display:flex;
-    justify-content:space-around;
+    justify-content:space-between;
     height:50px;
     align-items:center;
     background-color:rgb(77, 25, 25);
 }
-.header ul{
-    display:flex;
-    justify-content:space-around;
-    list-style:none;
-    align-items:center;
+
+.header .logo{
+
+    margin-left:20px;
 }
+
 .header  ul li{
     font-size:20px;
     color:white;
     cursor:pointer;
+    display:inline-block;
+}
+
+.header ul li a{
+    padding:20px;
+    margin-right:10px;
 }
 
 .middle h1{
