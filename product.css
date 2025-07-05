@@ -1,6 +1,7 @@
 .container{
     display:grid;
     grid-template-columns:1fr 1fr;
+    grid-template-areas:"nav nav";
 }
 
 .product img{
@@ -10,9 +11,13 @@
 }
 
 .cart-detail{
-    background-color:rgb(110, 0, 0);
+    background-color:rgb(110, 0, 0);  
 }
 
+.header nav .logo a{
+    text-decoration:none;
+    color:white;
+}
 
 .minus{
   width:45px;
@@ -39,3 +44,66 @@
     color:white;
     font-size:50px;
 }
+
+.product-detail span{
+    color:white;
+    padding:20px;
+    margin-left:20px;
+    display:inline-block;
+    width:600px;
+    height:200px;
+
+
+
+}
+
+.product-detail h1{
+    color:white;
+    margin-left:30px;
+}
+#cartbtn{
+    width:200px;
+    height:50px;
+    background-color:rgb(224, 33, 33);
+    color:white;
+    font-size:30px;
+
+}
+
+.header{
+    grid-area:nav;
+}
+nav .logo p{
+    color:white;
+    font-size:25px;
+    font-family:monospace;
+    font-style:italic;
+    
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    height:50px;
+    align-items:center;
+    background-color:rgb(77, 25, 25);
+    grid-area:nav;
+}
+
+.header .logo{
+
+    margin-left:20px;
+}
+
+.header  ul li{
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.header ul li a{
+    padding:20px;
+    margin-right:10px;
+}
+
